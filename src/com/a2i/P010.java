@@ -2,7 +2,10 @@ package com.a2i;
 
 /**
  * Created by brady.buford on 7/7/2017.
- * The prime numbers generator needs to be optimized.
+ * todo The prime numbers generator needs to be optimized.
+ *
+ * The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+ * Find the sum of all the primes below two million.
  */
 
 import static java.lang.Math.sqrt;
@@ -18,8 +21,6 @@ import java.net.URL;
 import java.nio.file.Paths;
 import java.nio.file.Files;
 import java.io.IOException;
-
-
 
 public class P010
 {

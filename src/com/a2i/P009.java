@@ -1,5 +1,15 @@
 package com.a2i;
 
+/**
+ * Created by brady.buford on 6/22/2017.
+ *
+ * A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
+                                                                                    a2 + b2 = c2
+ * For example, 32 + 42 = 9 + 16 = 25 = 52.
+ * There exists exactly one Pythagorean triplet for which a + b + c = 1000.
+ * Find the product abc.
+ */
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,9 +23,6 @@ import java.nio.file.Paths;
 import java.nio.file.Files;
 import java.io.IOException;
 
-/**
- * Created by brady.buford on 6/22/2017.
- */
 public class P009
 
 
