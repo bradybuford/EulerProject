@@ -2,6 +2,7 @@ package com.a2i;
 
 /**
  * Created by brady.buford on 7/10/2017.
+ * todo Finish this problem.
  *
  * In the 20×20 grid below, four numbers along a diagonal line have been marked in red.
                              08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
@@ -47,7 +48,7 @@ public class P011
 {
     public static void main(String[] args) throws IOException
     {
-        long time1 = System.nanoTime();
+        double time1 = System.nanoTime();
         //Beginning of code
 
         List<Integer> listNums = new ArrayList<>();
@@ -79,8 +80,8 @@ public class P011
 
 
         //End of code
-        long time2 = System.nanoTime();
-        long timeTaken_sec = (time2 - time1) / 1000000;
-        System.out.println("\nTime taken: " + timeTaken_sec + " millisecond");
+        double time2 = System.nanoTime();
+        double timeTaken_sec = (time2 - time1) / 1000000000;
+        System.out.println("\nTime taken: " + timeTaken_sec + " seconds");
     }
 }

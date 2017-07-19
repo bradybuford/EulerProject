@@ -43,16 +43,16 @@ public class P007
 
 
         //End of code
-        long time2 = System.nanoTime();
-        long timeTaken_sec = (time2 - time1) / 1000000;
-        System.out.println("\nTime taken: " + timeTaken_sec + " millisecond");
+        double time2 = System.nanoTime();
+        double timeTaken_sec = (time2 - time1) / 1000000000;
+        System.out.println("\nTime taken: " + timeTaken_sec + " seconds");
     }
 }
 
 //          Old code:
 //          took about 9 seconds to run
 
-//    long time1 = System.nanoTime();
+//    double time1 = System.nanoTime();
 //    int factors = 0;
 //    int num_of_primes = 10001;
 //
@@ -78,6 +78,6 @@ public class P007
 //        factors = 0;
 //        }
 //        System.out.println(xs.get(num_of_primes-1));
-//        long time2 = System.nanoTime();
-//        long timeTaken_sec = (time2 - time1) / 1000000;
-//        System.out.println("Time taken: " + timeTaken_sec + " millisecond");
+//        double time2 = System.nanoTime();
+//        double timeTaken_sec = (time2 - time1) / 1000000000;
+//        System.out.println("Time taken: " + timeTaken_sec + " seconds");

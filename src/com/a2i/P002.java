@@ -16,7 +16,7 @@ public class P002
 {
     public static void main(String[] args)
     {
-        long time1 = System.nanoTime();
+        double time1 = System.nanoTime();
         //Beginning of code
 
         ArrayList<Integer> fibonacciSequence = new ArrayList();
@@ -68,8 +68,8 @@ public class P002
                 + "values don't exceed 4 million is " + answer);
 
         //End of code
-        long time2 = System.nanoTime();
-        long timeTaken_sec = (time2 - time1) / 1000000;
-        System.out.println("\nTime taken: " + timeTaken_sec + " millisecond");
+        double time2 = System.nanoTime();
+        double timeTaken_sec = (time2 - time1) / 1000000000;
+        System.out.println("\nTime taken: " + timeTaken_sec + " seconds");
     }
 }

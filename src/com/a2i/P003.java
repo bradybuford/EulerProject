@@ -22,7 +22,7 @@ public class P003
 {
     public static void main(String[] args)
     {
-        long time1 = System.nanoTime();
+        double time1 = System.nanoTime();
         //Beginning of code
 
         long max_num = 600851475143L;
@@ -33,8 +33,8 @@ public class P003
         System.out.println("Largest prime factor: " + primeNumbers.get(primeNumbers.size()-1));
 
         //End of code
-        long time2 = System.nanoTime();
-        long timeTaken_sec = (time2 - time1) / 1000000;
-        System.out.println("\nTime taken: " + timeTaken_sec + " millisecond");
+        double time2 = System.nanoTime();
+        double timeTaken_sec = (time2 - time1) / 1000000000;
+        System.out.println("\nTime taken: " + timeTaken_sec + " seconds");
     }
 }

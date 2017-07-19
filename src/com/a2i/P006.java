@@ -20,7 +20,7 @@ public class P006
 {
     public static void main(String[] args)
     {
-        long time1 = System.nanoTime();
+        double time1 = System.nanoTime();
         //Beginning of code
 
         int max_nums = 100;
@@ -35,8 +35,8 @@ public class P006
         System.out.println(" "+squared_sums+"\n-"+sumed_squares+"\n="+diff);
 
         //End of code
-        long time2 = System.nanoTime();
-        long timeTaken_sec = (time2 - time1) / 1000000;
-        System.out.println("\nTime taken: " + timeTaken_sec + " millisecond");
+        double time2 = System.nanoTime();
+        double timeTaken_sec = (time2 - time1) / 1000000000;
+        System.out.println("\nTime taken: " + timeTaken_sec + " seconds");
     }
 }
