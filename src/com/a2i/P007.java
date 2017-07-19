@@ -12,7 +12,7 @@ public class P007
     public static void main(String[] args)
     {
         long time1 = System.nanoTime();
-
+        //Beginning of code
 
         int num_of_primes = 10001;
         List<Integer> xs = new ArrayList<>();
@@ -38,9 +38,10 @@ public class P007
         System.out.println(xs.get(num_of_primes-1));
 
 
+        //End of code
         long time2 = System.nanoTime();
         long timeTaken_sec = (time2 - time1) / 1000000;
-        System.out.println("Time taken: " + timeTaken_sec + " millisecond");
+        System.out.println("\nTime taken: " + timeTaken_sec + " millisecond");
     }
 }
 

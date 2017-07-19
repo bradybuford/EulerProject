@@ -17,6 +17,9 @@ public class P008
 {
     public static void main(String[] args) throws IOException
     {
+        long time1 = System.nanoTime();
+        //Beginning of code
+
         List<Integer> listNums = new ArrayList<>();
         List<Integer> factors = new ArrayList<>();
 
@@ -100,6 +103,9 @@ public class P008
         System.out.println("Greatest product of "+adj_nums+" adjacent numbers is: "+greatest);
         System.out.println("The "+adj_nums+" adjacent numbers are:               "+factors);
 
-
+        //End of code
+        long time2 = System.nanoTime();
+        long timeTaken_sec = (time2 - time1) / 1000000;
+        System.out.println("\nTime taken: " + timeTaken_sec + " millisecond");
     }
 }

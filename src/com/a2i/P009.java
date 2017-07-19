@@ -23,6 +23,7 @@ public class P009
     public static void main(String[] args)
     {
         long time1 = System.nanoTime();
+        //Beginning of code
 
 
         double c=0;
@@ -54,6 +55,7 @@ public class P009
         }
 
 
+        //End of code
         long time2 = System.nanoTime();
         long timeTaken_sec = (time2 - time1) / 1000000;
         System.out.println("\nTime taken: " + timeTaken_sec + " millisecond");

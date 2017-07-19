@@ -11,12 +11,17 @@ public class P004
 {
     public static void main(String[] args)
     {
+        long time1 = System.nanoTime();
+        //Beginning of code
+
+
         int n = 0;
         int flipped = 0;
         int original = 0;
         int z = 0;
         int max_num = 999;
         int min_num = 99;
+        int max = 0;
 
         for (int j = max_num; j > min_num; j--)
         {
@@ -34,7 +39,11 @@ public class P004
                 }
                 if (original == flipped)
                 {
-                    System.out.print(j+" * "+k+" = "+original+"  = "+flipped+"  It's a palindrome\n");
+                    if (flipped > max)
+                    {
+                        max = flipped;
+                    }
+//                    System.out.print(j+" * "+k+" = "+original+"  = "+flipped+"  It's a palindrome\n");
 //                    flipped = 0;
                     break;
                 }
@@ -46,18 +55,17 @@ public class P004
                 }
                 k--;
             }
-            if (original == flipped)
-            {
-              break;
-            }
-            z++;
+//            if (original == flipped)
+//            {
+//              break;
+//            }
+//            z++;
         }
+        System.out.println(max);
 
+        //End of code
+        long time2 = System.nanoTime();
+        long timeTaken_sec = (time2 - time1) / 1000000;
+        System.out.println("\nTime taken: " + timeTaken_sec + " millisecond");
     }
-
-
-
-
-
-
 }

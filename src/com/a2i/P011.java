@@ -26,8 +26,8 @@ public class P011
     public static void main(String[] args) throws IOException
     {
         long time1 = System.nanoTime();
-
         //Beginning of code
+
         List<Integer> listNums = new ArrayList<>();
 
         File path = new File("problem8.txt");

@@ -11,6 +11,9 @@ public class P005
 {
     public static void main(String[] args)
     {
+        long time1 = System.nanoTime();
+        //Beginning of code
+
         int n = 20;
         int max_factors = 20;
         boolean b = true;
@@ -31,5 +34,10 @@ public class P005
             }
             n++;
         }
+
+        //End of code
+        long time2 = System.nanoTime();
+        long timeTaken_sec = (time2 - time1) / 1000000;
+        System.out.println("\nTime taken: " + timeTaken_sec + " millisecond");
     }
 }
