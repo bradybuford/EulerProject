@@ -39,14 +39,16 @@ public class P012
         double time1 = System.nanoTime();
         //Beginning of code
 
-        int triNum = 0, numOfTri = 7, j = 0;
+        
+        int triNum = 0, numOfFactors = 320, j = 0;
         ArrayList<Integer> listTri = new ArrayList();
         ArrayList<Integer> listFactors = new ArrayList();
 
         ArrayList<ArrayList<Integer>> listoflistFactors = new ArrayList<ArrayList<Integer>>();
 
-        for (int n = 1; n <= numOfTri; n++)
+        for (int n = 1; listFactors.size() <= numOfFactors; n++)
         {
+            listFactors.clear();
             triNum = 0;
             for (int nTemp = n; nTemp != 0; nTemp--)
             {
@@ -54,28 +56,34 @@ public class P012
 
 
             }
-            System.out.println(triNum+":");
+//            System.out.println(triNum+":");
             listTri.add(triNum);
             for (int i = 1; i <= triNum; i++)
             {
                 if (triNum % i == 0)
                 {
-                    System.out.println("\t"+i);
+//                    System.out.println("\t"+i);
                     listFactors.add(i);
                 }
 
             }
-            System.out.println("\t"+listFactors);
+//            System.out.println("\t"+listFactors+"\t"+listFactors.size());
+            if (listFactors.size() >= numOfFactors)
+            {
+                System.out.println(listTri.get(listTri.size()-1));
+//                System.out.println(listFactors);
+                System.out.println(listFactors.size());
+                break;
+            }
 
-            listoflistFactors.add(j,listFactors);
+//            listoflistFactors.add(j,listFactors);
             j++;
-            listFactors.clear();
 
         }
 
 
-        System.out.println(listTri);
-        System.out.println(listoflistFactors.get(6));
+//        System.out.println(listTri);
+//        System.out.println(listoflistFactors.get(6));
 
 
         //End of code
